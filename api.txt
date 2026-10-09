@@ -1,0 +1,17 @@
+from google import genai
+
+client = genai.Client(api_key="AQ.Ab
+8RN6Iq
+MVw4kBp
+XDYse_gD
+YM8yN9W
+txUvrgFm
+CYU_KTt
+I0viQ")
+
+response = client.models.generate_content(
+    model="gemini-2.5-flash",
+    contents="""create a fake dataset with 10 rosw using faker python code. no comments, only the python code"""
+)
+
+print(response.text)
